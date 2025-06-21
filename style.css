@@ -7,8 +7,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
-  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-family: 'CaskaydiaMono Nert Font', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
   background: linear-gradient(135deg, var(--bg-primary) 0%, #0a0e16 100%);
   color: var(--text-primary);
   line-height: 1.6;
@@ -24,15 +29,15 @@ body {
   --bg-tertiary: #21262d;
   --text-primary: #e6edf3;
   --text-secondary: #7d8590;
-  --accent: #58a6ff;
-  --accent-hover: #79c0ff;
-  --border: #30363d;
+  --accent: #bb9af7;
+  --accent-hover:  #bf526b;
+  --border: rgba(192,105,181,1) ;
   --success: #3fb950;
   --warning: #d29922;
 }
 
 /* ======================
-   Layout Helpers
+    Layout Helpers
 ====================== */
 .container {
   max-width: 1200px;
@@ -41,7 +46,7 @@ body {
 }
 
 /* ======================
-   Header + Navigation
+    Header + Navigation
 ====================== */
 header {
   padding: 2rem 0;
@@ -316,6 +321,21 @@ h2 {
   color: var(--accent-hover);
 }
 
+/*  ===============
+    Violet
+=====================*/
+.violet-link {
+  color: violet;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.violet-link:hover {
+  color: #9932cc; /* Darker violet (darkorchid) */
+  text-decoration: underline;
+}
+
 /* ======================
    Contributions
 ====================== */
@@ -382,7 +402,11 @@ footer {
   color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
+
 
 .social-links a:hover {
   color: var(--accent);
