@@ -7,18 +7,29 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'CaskaydiaMono Nerd Font';
+  src: url('assets/fonts/CaskaydiaMonoNerdFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-
+/* 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace */
 body {
-  font-family: 'CaskaydiaMono Nert Font', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-family: 'CaskaydiaMono Nerd Font';
   background: linear-gradient(135deg, var(--bg-primary) 0%, #0a0e16 100%);
   color: var(--text-primary);
   line-height: 1.6;
   min-height: 100vh;
 }
+
+
+
 
 /* ======================
    Color Variables
@@ -118,7 +129,7 @@ nav {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1rem;
-  font-family: 'SF Mono', monospace;
+  /* font-family: 'SF Mono', monospace; */
   font-size: 0.9rem;
   margin: 2rem 0;
   position: relative;
@@ -411,6 +422,11 @@ footer {
 .social-links a:hover {
   color: var(--accent);
 }
+
+.social-links i {
+  font-size: 1.1rem;
+}
+
 
 /* ======================
    Typing Effect
