@@ -127,6 +127,7 @@ nav {
 /* ======================
    Terminal Prompt
 ====================== */
+
 .terminal-prompt {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
@@ -177,7 +178,26 @@ nav {
 .prompt-output {
   color: var(--text-secondary);
   margin-left: 1rem;
+  white-space: pre;  /* very important */
+  font-family: 'CaskaydiaMono Nerd Font', monospace;
+  font-size: 0.9rem;
+  text-align: left;
 }
+
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  caret-color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+
 
 /* ======================
    Sections

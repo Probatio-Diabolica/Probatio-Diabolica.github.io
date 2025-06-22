@@ -9,10 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
   <header>
     <nav class="container">
-      <div class="logo">~/Ayush_Kaintura</div>
+      <div class="logo"><i class="fas fa-terminal"></i> ayush@Web:~</div>
+      <!-- <div class="logo"><i class="fas fa-keyboard"></i> ayush@Web:~</div>
+      <div class="logo"><i class="fas fa-code"></i> ayush@Web:~</div> -->
+
       <ul class="nav-links">
         <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>
@@ -27,18 +31,15 @@
     <section class="hero">
       <div class="container">
         <h1>Software Engineering Student</h1>
-        <p class="subtitle">Building cool stuff • Contributing to open source • Arch Linux enthusiast</p>
+        <p class="subtitle">Systems thinker • Minimalist by principle • Obsessed with performance and clean design</p>
         <div class="terminal-prompt">
-          <div class="terminal-content">
-            <div class="prompt-line">
-              <span class="prompt-symbol">$</span>
-              <span>whoami</span>
-            </div>
-            <div class="prompt-output">Ayush Kaintura</div>
-            <div class="prompt-line">
-              <span class="prompt-symbol">$</span>
-              <span class="typing-effect">cat interests.txt</span>
-            </div>
+          
+          <div class="terminal-content" id="terminal-output">
+          </div>
+          <div class="prompt-line">
+            <span class="prompt-symbol">$</span>
+            <input type="text" id="terminal-input" class="terminal-input typing-placeholder" autocomplete="off" spellcheck="false" placeholder="Type a command..." />
+
           </div>
         </div>
       </div>
@@ -188,5 +189,8 @@
       <p>&copy; 2025 • Built with passion for simplicity</p>
     </div>
   </footer>
+
+  <script src="assets/js/terminal.js"></script>
+
 </body>
 </html>
