@@ -13,10 +13,7 @@
 <body>
   <header>
     <nav class="container">
-      <div class="logo"><i class="fas fa-terminal"></i> ayush@Web:~</div>
-      <!-- <div class="logo"><i class="fas fa-keyboard"></i> ayush@Web:~</div>
-      <div class="logo"><i class="fas fa-code"></i> ayush@Web:~</div> -->
-
+      <div class="logo"><i class="fas fa-terminal"></i> ayush@usrbin:~</div>
       <ul class="nav-links">
         <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>
@@ -32,16 +29,27 @@
       <div class="container">
         <h1>Software Engineering Student</h1>
         <p class="subtitle">Systems thinker • Minimalist by principle • Obsessed with performance and clean design</p>
-        <div class="terminal-prompt">
-          
-          <div class="terminal-content" id="terminal-output">
-          </div>
+        
+        <!-- Terminal -->
+        <!-- <div class="terminal-prompt">  
+          <div class="terminal-content" id="terminal-output"></div>
           <div class="prompt-line">
             <span class="prompt-symbol">$</span>
             <input type="text" id="terminal-input" class="terminal-input typing-placeholder" autocomplete="off" spellcheck="false" placeholder="Type a command..." />
 
           </div>
+        </div> -->
+        <div class="terminal-prompt">
+          <div class="terminal-content" id="terminal-output"></div>
+          <div class="prompt-line">
+            <span class="prompt-user">ayush@arch</span>
+            <span class="prompt-separator">:</span>
+            <span class="prompt-path">~</span>
+            <span class="prompt-symbol">$</span>
+            <input type="text" id="terminal-input" class="terminal-input typing-placeholder" autocomplete="off" spellcheck="false" placeholder="Type a command..." />
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -51,14 +59,18 @@
         <h2>About Me</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>I'm a software engineering student from UU with a passion for building innovative solutions and contributing to the open source community.</p>
-            <p>My interests include:</p>
+            <p>
+              I’m <strong>Ayush Kaintura</strong>, and I like my software the way I like my shell configs — fast, minimal, and predictable.
+              I’ve probably spent more time in <code>/proc</code> than most spend on Stack Overflow, and I’m not proud of it... but I kinda am.
+              Whether it’s building a task queue from scratch or tinkering deep into system internals, I care about clean design, low overhead, and tools that just work — no manual needed.
+            </p>
+            <p>Some things I enjoy:</p>
             <ul class="interests">
-              <li>Committing to open source projects</li>
-              <li>Building cool stuff</li>
-              <li>Tinkering around my Arch installation</li>
-              <li>Linux systems and philosophy</li>
-              <li>Embracing simplicity in design</li>
+              <li>Contributing to open source projects</li>
+              <li>Building systems that shouldn't exist, but work anyway</li>
+              <li>Keeping my Arch install unnecessarily optimized</li>
+              <li>Chasing performance and elegance in equal parts</li>
+              <li>Debugging things nobody asked me to touch</li>
             </ul>
           </div>
           <div class="stats-grid">
@@ -75,29 +87,30 @@
       </div>
     </section>
 
+
     <!-- PROJECTS SECTION -->
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
         <div class="projects-grid">
+
           <!-- Violet -->
           <div class="project-card">
             <div class="project-title">Violet</div>
             <div class="project-description">
-              A lightweight, persistent Redis-like server built in modern C++. Supports strings, lists, and hashes with custom RESP protocol parsing, key expiration, and disk persistence.
-              Paired with a custom-built CLI client (<a href="https://github.com/Probatio-Diabolica/Red" class="violet-link" target="_blank">Red</a>) for interactive querying.
+              A fast, minimalist in-memory key-value database engineered in modern C++. Violet supports strings, lists, and hashes with custom RESP-like protocol parsing, optional key expiration, and disk persistence.  
+              It comes with a purpose-built CLI client (<a href="https://github.com/Probatio-Diabolica/Red" class="violet-link" target="_blank">Red</a>) for seamless interaction and scripting.
             </div>
             <div class="project-tech">
               <span class="tech-tag">C++17</span>
               <span class="tech-tag">Multithreaded</span>
-              <span class="tech-tag">RESP Protocol</span>
+              <span class="tech-tag">Custom Protocol</span>
               <span class="tech-tag">Persistence</span>
               <span class="tech-tag">In-Memory DB</span>
               <span class="tech-tag">Key-Value Store</span>
             </div>
             <a href="https://github.com/Probatio-Diabolica/Violet" class="project-link">View on GitHub →</a>
           </div>
-
       
           <!-- PUCK -->
           <div class="project-card">
@@ -158,14 +171,14 @@
     <section id="contact">
       <div class="container">
         <h2>Get In Touch</h2>
-        <div class="terminal-prompt center">
+        <div class="terminal-prompt">
           <div class="terminal-content">
             <div class="prompt-line">
               <span class="prompt-symbol">$</span>
               <span>echo "Let's build something amazing together"</span>
             </div>
-            <div class="prompt-output accent">
-              Let's build something amazing together
+            <div class="prompt-line">
+              <span class="prompt-output accent">Let's build something amazing together</span>
             </div>
           </div>
         </div>

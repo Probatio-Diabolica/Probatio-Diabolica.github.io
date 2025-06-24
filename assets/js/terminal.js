@@ -33,15 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
 └─────────────────────────────────────┘`.trim(),
     help: () => `
 Available commands:
-- whoami              show current user
-- cat interests.txt   display interests
+- echo <text>           repeat the given text
+- whoami               show current user
+- cat interests.txt    display interests
 - neofetch            system information
 - ls                  list directory contents
 - pwd                 print working directory
 - cat resume.txt      show resume summary
 - clear               clear terminal
 - help                show this help message
-    `.trim(),
+ `.trim(),
     ls: () => `
 projects/
 contributions/

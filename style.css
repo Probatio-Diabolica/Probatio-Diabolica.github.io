@@ -128,12 +128,26 @@ nav {
    Terminal Prompt
 ====================== */
 
+.prompt-user {
+    color: var(--text-primary);
+    margin-right: 0;
+}
+
+.prompt-separator {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.prompt-path {
+    color: var(--accent);
+    margin-right: 0.5rem;
+}
+
 .terminal-prompt {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1rem;
-  /* font-family: 'SF Mono', monospace; */
   font-size: 0.9rem;
   margin: 2rem 0;
   position: relative;
@@ -162,6 +176,7 @@ nav {
 
 .terminal-content {
   margin-top: 20px;
+  text-align: left;
 }
 
 .prompt-line {
