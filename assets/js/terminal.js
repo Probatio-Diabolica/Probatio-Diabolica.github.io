@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const commands = {
     echo: (input) => {
   const parts = input.split(" ");
-  parts.shift(); // Remove 'echo'
+  parts.shift(); 
   return parts.join(" ");
 },
     whoami: () => "Ayush Kaintura",
@@ -37,27 +37,18 @@ Available commands:
 - whoami               show current user
 - cat interests.txt    display interests
 - neofetch            system information
-- ls                  list directory contents
 - pwd                 print working directory
 - cat resume.txt      show resume summary
 - clear               clear terminal
 - help                show this help message
  `.trim(),
-    ls: () => `
-projects/
-contributions/
-about.md
-interests.txt
-resume.txt
-contact.info
-    `.trim(),
     pwd: () => "/home/ayush/portfolio",
     "cat resume.txt": () => `
 AYUSH KAINTURA
 Software Engineering Student
 
 SKILLS:
-- C++17+, Java, Python
+- C++, Java, Python
 - System Programming
 - Database Design (Redis-like systems)
 - Network Programming
